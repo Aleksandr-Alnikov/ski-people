@@ -1,0 +1,23 @@
+.breadcrumb {
+
+  &__list {
+    display: flex;
+    gap: 20px;font-size: 12px;
+    color: #969eae;
+  }
+
+  &__link {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      content: '>';
+      top: 50%;
+      right: -14px;
+      transform: translateY(-50%);
+    }
+  }
+  .breadcrumb__item:last-child .breadcrumb__link:after {
+    content: '';
+  }
+}

@@ -1,0 +1,151 @@
+.product {
+  padding: 24px 0 60px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    
+    @media (min-width: 768px) {
+      gap: 40px;
+    }
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 12px;
+    }
+
+    @media (min-width: 1440px) {
+      gap: 16px;
+    }
+  }
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    margin-bottom: 24px;
+
+    @media (min-width: 768px) {
+      font-size: 32px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slider-image {
+    width: 100%;
+    border-radius: 16px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 12px;
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__info {
+    color: #1c1c1c;
+  }
+
+  &__info-price {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  &__info-id {
+    font-size: 12px;
+    margin-bottom: 24px;
+    border-radius: 32px;
+    background-color: #eeeff2;
+    padding: 4px 8px;
+    display: inline-block;
+  }
+
+  &__info-title {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &__table-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeff2;
+  }
+
+  &__table-item {
+    padding: 8px 0;
+    color: #969eae;
+
+    &:last-child {
+      color: #1c1c1c;
+    }
+  }
+
+  &__button {
+    color: #0044f0;
+    background-color: #fff;
+    border: 1px solid #0044f0;
+    border-radius: 32px;
+    padding: 12px 24px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color:  #0044f0;
+      color: #fff;
+    }
+
+    &:active {
+      color: #0044f0;
+      background-color: #fff;
+      border: 1px solid #042f9c;
+    }
+  }
+}
+
+.info__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.slider__thubnails {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    gap: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    gap: 12px;
+  }
+
+  @media (min-width: 1440px) {
+    gap: 16px;
+  }
+
+  &-item {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

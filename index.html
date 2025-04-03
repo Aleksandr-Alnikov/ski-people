@@ -15,7 +15,7 @@
             <img src="./public/img/logo.svg" alt="logo" class="header__logo-image">
           </a>
           <form action="#" class="header__search">
-            <input type="search" name="search" class="header__search-input">
+            <input type="search" name="search" class="header__search-input" placeholder="Введите запрос">
             <button class="header__search-button" type="submit">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.66634 14C11.1641 14 13.9997 11.1645 13.9997 7.66671C13.9997 4.1689 11.1641 1.33337 7.66634 1.33337C4.16854 1.33337 1.33301 4.1689 1.33301 7.66671C1.33301 11.1645 4.16854 14 7.66634 14Z" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,7 +52,7 @@
         <div class="container">
           <ul class="catalog__list">
             <li class="catalog__item">
-              <a href="#" class="catalog__link">Все</a>
+              <a href="#" class="catalog__link catalog__link-active">Все</a>
             </li>
             <li class="catalog__item">
               <a href="#" class="catalog__link">Лыжи</a>
@@ -100,8 +100,10 @@
                     <path d="M8.41301 13.8733C8.18634 13.9533 7.81301 13.9533 7.58634 13.8733C5.65301 13.2133 1.33301 10.46 1.33301 5.79332C1.33301 3.73332 2.99301 2.06665 5.03967 2.06665C6.25301 2.06665 7.32634 2.65332 7.99967 3.55998C8.67301 2.65332 9.75301 2.06665 10.9597 2.06665C13.0063 2.06665 14.6663 3.73332 14.6663 5.79332C14.6663 10.46 10.3463 13.2133 8.41301 13.8733Z" fill="white" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
-                <h3 class="card__title">Горные лыжи</h3>
-                <p class="card__price">5 000 ₽</p>
+                <div class="card__info">
+                  <h3 class="card__card__info-title">Горные лыжи</h3>
+                  <p class="card__card__info-price">5 000 ₽</p>
+                </div>
                 <button class="card__button">В корзину</button>
               </article>
             </li>
@@ -109,51 +111,56 @@
         </div>
       </section>
       <section class="product">
-        <div class="container">
+        <div class="container product__container">
           <h2 class="product__title">Горные лыжи</h2>
-          <div class="product__slider">
-            <div class="product__slider-image">
-              <div class="product__slider-thubnails">
-
+          <div class="product__description">
+            <div class="product__slider">
+              <img src="#" alt="sss" class="product__slider-image"/>
+                <ul class="product__slider-thubnails slider__thubnails">
+                  <li class="slider__thubnails-item">
+                    <img class="slider__thubnails-image" src="#" alt="sss">
+                  </li>
+                </ul>
+            </div>
+            <div class="product__info">
+              <p class="product__info-price">5 000 ₽</p>
+              <p class="product__info-id">арт. 84348945757</p>
+              <h3 class="product__info-title">Общие характеристики</h3>
+              <table class="product__info-table product__table">
+                <tr class="product__table-row">
+                  <td class="product__table-item">Коллекция</td>
+                  <td class="product__table-item">Snow</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Производитель</td>
+                  <td class="product__table-item">Россия</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Гарантия</td>
+                  <td class="product__table-item">18 мес.</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Срок службы</td>
+                  <td class="product__table-item">5 лет</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Цвет</td>
+                  <td class="product__table-item">Синий</td>
+                </tr>
+                <tr class="product__table-row">
+                  <td class="product__table-item">Макс. нагрузка</td>
+                  <td class="product__table-item">130 кг</td>
+                </tr>
+              </table>
+              <div class="info__buttons">
+                <button class="product__button" type="button">В корзину</button>
+                <button class="product__like-button" type="button">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.41331 13.8733C8.18665 13.9533 7.81331 13.9533 7.58665 13.8733C5.65331 13.2133 1.33331 10.46 1.33331 5.79332C1.33331 3.73332 2.99331 2.06665 5.03998 2.06665C6.25331 2.06665 7.32665 2.65332 7.99998 3.55998C8.67331 2.65332 9.75331 2.06665 10.96 2.06665C13.0066 2.06665 14.6666 3.73332 14.6666 5.79332C14.6666 10.46 10.3466 13.2133 8.41331 13.8733Z" fill="white" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
               </div>
             </div>
-          </div>
-          <div class="product__info">
-            <p class="product__info-price">5 000 ₽</p>
-            <p class="product__info-id">арт. 84348945757</p>
-            <h3 class="product__info-title">Общие характеристики</h3>
-            <table class="product__info-table product__table">
-              <tr class="product__table-row">
-                <td class="product__table-item">Коллекция</td>
-                <td class="product__table-item">Snow</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Производитель</td>
-                <td class="product__table-item">Россия</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Гарантия</td>
-                <td class="product__table-item">18 мес.</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Срок службы</td>
-                <td class="product__table-item">5 лет</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Цвет</td>
-                <td class="product__table-item">Синий</td>
-              </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Макс. нагрузка</td>
-                <td class="product__table-item">130 кг</td>
-              </tr>
-            </table>
-            <button class="product__button" type="button">В корзину</button>
-            <button class="product__like-button" type="button">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.41331 13.8733C8.18665 13.9533 7.81331 13.9533 7.58665 13.8733C5.65331 13.2133 1.33331 10.46 1.33331 5.79332C1.33331 3.73332 2.99331 2.06665 5.03998 2.06665C6.25331 2.06665 7.32665 2.65332 7.99998 3.55998C8.67331 2.65332 9.75331 2.06665 10.96 2.06665C13.0066 2.06665 14.6666 3.73332 14.6666 5.79332C14.6666 10.46 10.3466 13.2133 8.41331 13.8733Z" fill="white" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
           </div>
         </div>
       </section>
@@ -197,22 +204,22 @@
             <fieldset class="cart__form-fieldset">
               <legend class="cart__form-legend">Доставка</legend>
               <label class="cart__form-label">
-                <input type="radio" class="cart__form-radio" name="delivery">
+                <input type="radio" class="cart__form-radio" value="delivery" name="delivery">
                 Доставка
               </label>
               <label class="cart__form-label">
-                <input type="radio" class="cart__form-radio" name="pickup">
+                <input type="radio" class="cart__form-radio" value="pickup" name="delivery">
                 Самовывоз
               </label>
             </fieldset>
             <fieldset class="cart__form-fieldset">
               <legend class="cart__form-legend">Оплата</legend>
               <label class="cart__form-label">
-                <input type="radio" class="cart__form-radio" name="card">
+                <input type="radio" class="cart__form-radio" value="card" name="payment">
                 Картой при получении
               </label>
               <label class="cart__form-label">
-                <input type="radio" class="cart__form-radio" name="cash">
+                <input type="radio" class="cart__form-radio" value="cash" name="payment">
                 Наличными при получении
               </label>
             </fieldset>
@@ -220,7 +227,7 @@
         </div>
       </section>
       <section class="order">
-        <div class="container">
+        <div class="container order__container">
           <div class="order__header">
             <span class="order__header-title">Заказ успешно размещен</span>
             <span class="order__header-price">20 000 ₽</span>
@@ -258,7 +265,7 @@
       </section>
     </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__container">
       <a href="/" class="footer__logo-link">
         <svg class="footer__logo-icon" width="276" height="60" viewBox="0 0 276 60" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M266.593 45.1449C264.543 45.1449 262.77 44.6614 261.274 43.6942C259.777 42.7175 258.619 41.3683 257.799 39.6469C256.989 37.9157 256.584 35.9234 256.584 33.6701C256.584 31.4263 256.989 29.4341 257.799 27.6933C258.619 25.9428 259.749 24.5743 261.188 23.5879C262.637 22.5917 264.31 22.0937 266.207 22.0937C267.398 22.0937 268.547 22.3161 269.653 22.761C270.758 23.1962 271.75 23.8683 272.627 24.7774C273.513 25.6768 274.214 26.8132 274.729 28.1865C275.243 29.5501 275.501 31.1652 275.501 33.0318V34.3084H258.343V32.0308H272.898C272.898 30.5995 272.612 29.3132 272.04 28.172C271.478 27.0211 270.692 26.112 269.681 25.4447C268.68 24.7774 267.522 24.4438 266.207 24.4438C264.815 24.4438 263.59 24.8209 262.532 25.5753C261.474 26.3296 260.645 27.3258 260.044 28.5637C259.453 29.8016 259.153 31.1556 259.143 32.6256V33.9892C259.143 35.759 259.444 37.3064 260.044 38.6314C260.654 39.9467 261.517 40.967 262.632 41.6923C263.747 42.4176 265.068 42.7803 266.593 42.7803C267.632 42.7803 268.542 42.6159 269.324 42.2871C270.115 41.9583 270.777 41.5182 271.311 40.967C271.855 40.406 272.264 39.7919 272.541 39.1246L274.957 39.9225C274.624 40.8606 274.076 41.7262 273.313 42.5192C272.56 43.3122 271.616 43.9505 270.482 44.4341C269.357 44.908 268.061 45.1449 266.593 45.1449Z" fill="#0044F0"/>
